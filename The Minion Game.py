@@ -3,7 +3,7 @@ _vowel = ['A','I','U','E','O']
 def split(word):
     return [char for char in word]
 
-def minion_game(string):  ##TLE
+def minion_game_1(string):  ##TLE
     stuart_score = 0
     kevin_score = 0
     split_string = split(string)
@@ -19,7 +19,7 @@ def minion_game(string):  ##TLE
     else:
         print("Draw")
 
-def minion_game(string): ##TLE, Faster
+def minion_game_2(string): ##TLE, Faster
     stuart_score = 0
     kevin_score = 0
     split_string = split(string)
