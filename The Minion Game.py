@@ -38,6 +38,22 @@ def minion_game(string): ##TLE, Faster
         print("Kevin " + str(kevin_score))
     else:
         print("Draw")
+        
+def minion_game(string): ##ACC
+    stuart_score = 0
+    kevin_score = 0
+    for i in range(len(string)):
+        if string[i] in _vowel:
+            kevin_score+= len(string)-i
+        else:
+            stuart_score+=len(string)-i
+
+    if(stuart_score > kevin_score):
+        print("Stuart " + str(stuart_score))
+    elif(stuart_score < kevin_score):
+        print("Kevin " + str(kevin_score))
+    else:
+        print("Draw")
 
 if __name__ == '__main__':
     s = input()
